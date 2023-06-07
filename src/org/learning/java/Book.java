@@ -13,19 +13,19 @@ public class Book {
     private int numberPages;
 
     Book(String title, String author, String editor, int numberPages) throws NullValueException, InvalidNumberOfPagesException {
-        if (title==null){
+        if (title == null){
             throw new NullValueException();
         }else {
             this.title = title;
         }
 
-        if (author==null){
+        if (author == null){
             throw new NullValueException();
         }else {
             this.author = author;
         }
 
-        if (editor==null){
+        if (editor == null){
             throw new NullValueException();
         }else {
             this.editor = editor;
