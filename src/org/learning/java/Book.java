@@ -13,19 +13,19 @@ public class Book {
     private int numberPages;
 
     Book(String title, String author, String editor, int numberPages) throws NullValueException, InvalidNumberOfPagesException {
-        if (title == null){
+        if (title.isEmpty()){
             throw new NullValueException();
         }else {
             this.title = title;
         }
 
-        if (author == null){
+        if (author.isEmpty()){
             throw new NullValueException();
         }else {
             this.author = author;
         }
 
-        if (editor == null){
+        if (editor.isEmpty()){
             throw new NullValueException();
         }else {
             this.editor = editor;
@@ -55,7 +55,7 @@ public class Book {
     }
 
     public void setTitle(String title) {
-        if (title==null){
+        if (title.isEmpty()){
             throw new NullValueException();
         }else {
             this.title = title;
@@ -63,7 +63,7 @@ public class Book {
     }
 
     public void setAuthor(String author) {
-        if (author==null){
+        if (author.isEmpty()){
             throw new NullValueException();
         }else {
             this.author = author;
@@ -71,7 +71,7 @@ public class Book {
     }
 
     public void setEditor(String editor) {
-        if (editor==null){
+        if (editor.isEmpty()){
             throw new NullValueException();
         }else {
             this.editor = editor;
